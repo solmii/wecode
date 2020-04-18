@@ -1,0 +1,110 @@
+body {
+  box-sizing: border-box;
+  background-image: url(img/background_Mobile.png);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.point {
+  color: #fb4b4b;
+}
+
+.nav_bar ul {
+  display: flex;
+  margin: 0;
+  justify-content: space-evenly;
+  box-shadow: 0 1px 3px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.nav_bar li {
+  display: flex;
+  list-style: none;
+}
+
+.nav_bar a {
+  color: black;
+  padding: 3px 16px;
+  border-radius: 3px;
+  font-family: "Baloo Paaji 2", cursive;
+  text-decoration: none;
+}
+
+.nav_bar a:hover {
+  color: white;
+  background-color: #fb4b4b;
+}
+
+h1 {
+  display: block;
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 55px;
+  text-align: center;
+  padding: 65px 0;
+}
+
+h2 {
+  display: block;
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 55px;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro p {
+  padding: 10px 0 15px 0;
+}
+
+p {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+#more_info a {
+  font-family: "Baloo Paaji 2", cursive;
+  padding: 0 8px;
+  text-decoration: none;
+  color: #fb4b4b;
+}
+
+#more_info a:hover {
+  border-bottom: 4px solid #fb4b4b;
+}
+
+.trip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 120px;
+  padding-bottom: 23px;
+}
+
+.game,
+.tennis,
+.coding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 23px;
+}
+
+main img {
+  margin: 10px;
+  border-top: 5px solid #fb4b4b;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 50%;
+  }
+}
