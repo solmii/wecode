@@ -102,6 +102,7 @@ main {
 }
 
 .food video {
+  margin-bottom: 2%;
   border-top: 5px solid #fb4b4b;
 }
 
