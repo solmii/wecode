@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,69 +20,95 @@
       href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
       rel="stylesheet"
     />
-    <title>hello</title>
+    <title>Solog</title>
   </head>
   <body>
-    <div class="nav_bar">
-      <ul>
-        <li class="profile"><a href="#">Profile</a></li>
-        <li class="hobby"><a href="#">Hobby</a></li>
-        <li class="home"><a href="#">Home</a></li>
-        <li class="favorite"><a href="#">Favorite</a></li>
-        <li class="contact"><a href="#">Contact</a></li>
-      </ul>
-    </div>
+    <header>
+      <div class="wrap">
+        <nav class="mobile_menu">
+          <ul>
+            <li><a class="profile" href="#">Profile</a></li>
+            <li><a class="hobby" href="#">Favorite</a></li>
+            <li><a class="home" href="#">Home</a></li>
+            <li><a class="favorite" href="#">to do list</a></li>
+            <li><a class="contact" href="#">Calculator</a></li>
+          </ul>
+        </nav>
+      </div>
 
-    <h1 class="title">
-      안녕하세요,<br /><span class="point">강솔미</span>입니다.
-    </h1>
+      <div class="title_section">
+        <h1>안녕하세요,<br /><span class="point">강솔미</span>입니다.</h1>
+      </div>
 
-    <div class="intro">
-      <img id="intro_img" src="img/main.png" />
-      <p>
-        안녕하세요,<br />Lorem ipsum, dolor sit amet<br />
-        consectetur adipisicing elit.<br />
-        웹디자이너로 일하다가,<br />
-        개발자라는 직업에 매력을 느껴<br /><span class="point">WECODE</span>에
-        오게 되었습니다.
-      </p>
-      <div id="more_info"><a href="#">more info</a></div>
-    </div>
+      <div class="introduce">
+        <img id="introduce_img" src="img/main.png" />
+        <p>
+          안녕하세요,<br />
+          웹디자이너로 일하다가<br />
+          개발자라는 직업에 매력을 느껴<br /><span class="point">WECODE</span>에
+          오게 되었습니다.<br />
+          html도 힘겨워하는 <span class="point">코린이</span>지만,<br />
+          열심히 할게요!
+        </p>
+        <div id="more_info"><a href="#">more info</a></div>
+      </div>
+    </header>
 
     <main>
       <div class="trip">
-        <img src="img/trip1.jpg" />
-        <img src="img/trip2.jpg" />
-        <img src="img/trip3.jpg" />
-        <img src="img/trip4.jpg" />
+        <div>
+          <img class="trip_img" src="img/trip1.jpeg" />
+          <img class="trip_img" src="img/trip2.jpeg" />
+          <img class="trip_img" src="img/trip3.jpeg" />
+          <img class="trip_img" src="img/trip4.jpg" />
+        </div>
         <p>저는 여행을 <span class="point">사랑</span>하고,</p>
       </div>
 
-      <div class="game">
-        <img src="img/img.jpg" />
-        <p>Lorem ipsum, <span class="point">dolor</span> sit amet</p>
+      <div class="food">
+        <video autoplay loop muted width="90%">
+          <source src="img/food.mp4" type="video/mp4" />
+        </video>
+        <p>먹는것도 <span class="point">사랑</span>하고,</p>
       </div>
 
-      <div class="tennis">
-        <img src="img/img.jpg" />
-        <p>Lorem ipsum, <span class="point">dolor</span> sit amet</p>
+      <div class="drink">
+        <img class="drink_img" src="img/drink.jpg" />
+        <p>술도 <span class="point">사랑</span>합니다ㅎㅎ</p>
       </div>
 
       <div class="coding">
-        <img src="img/img.jpg" />
-        <p>이제 막 코딩에 발을 들인 <span class="point">코린이</span>입니다.</p>
+        <img class="coding_img" src="img/coding.jpg" />
+        <p>
+          그리고...<br />코딩과 <span class="point">사랑</span>에 빠지는 중인
+          <span class="point">코린이</span>입니다.
+        </p>
       </div>
     </main>
 
     <footer>
-      <h2>잘 부탁드립니다!</h2>
-      <ul>
-        <li class="social">
-          <a href="#"><i class="fab fa-github"></i></a>
-        </li>
-        <li class="social"></li>
-        <li class="social"></li>
-      </ul>
+      <div class="footer_section">
+        <h1>잘 부탁드립니다!</h1>
+      </div>
+      <nav class="social_menu">
+        <ul>
+          <li>
+            <a href="https://github.com/solmii" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://velog.io/@solmii" target="_blank"
+              ><i class="fab fa-vimeo"></i
+            ></a>
+          </li>
+          <li>
+            <a href="mailto:rkdthfal132@gmail.com"
+              ><i class="fas fa-envelope-square"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
     </footer>
   </body>
 </html>

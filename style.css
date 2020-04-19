@@ -1,6 +1,6 @@
 body {
   box-sizing: border-box;
-  background-image: url(img/background_Mobile.png);
+  height: 100vh;
 }
 
 * {
@@ -8,23 +8,24 @@ body {
   padding: 0;
 }
 
+p {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 1em;
+  line-height: 1.7;
+}
+
 .point {
   color: #fb4b4b;
 }
 
-.nav_bar ul {
+.wrap ul {
   display: flex;
-  margin: 0;
-  justify-content: space-evenly;
+  justify-content: space-around;
   box-shadow: 0 1px 3px 0 hsla(0, 0%, 0%, 0.2);
-}
-
-.nav_bar li {
-  display: flex;
   list-style: none;
 }
 
-.nav_bar a {
+.wrap a {
   color: black;
   padding: 3px 16px;
   border-radius: 3px;
@@ -32,42 +33,30 @@ body {
   text-decoration: none;
 }
 
-.nav_bar a:hover {
+.wrap a:hover {
   color: white;
   background-color: #fb4b4b;
 }
 
-h1 {
+.title_section h1,
+.footer_section h1 {
   display: block;
   font-family: "Do Hyeon", sans-serif;
-  font-size: 55px;
+  font-size: 3.5em;
   text-align: center;
-  padding: 65px 0;
+  padding: 60px 0;
 }
 
-h2 {
-  display: block;
-  font-family: "Do Hyeon", sans-serif;
-  font-size: 55px;
-  text-align: center;
-  padding: 25px 0;
-}
-
-.intro {
+.introduce {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f7ece8;
+  padding: 40px 0;
 }
 
-.intro p {
-  padding: 10px 0 15px 0;
-}
-
-p {
-  font-family: "Nanum Gothic", sans-serif;
-  font-size: 17px;
-  line-height: 1.7;
-  letter-spacing: 1px;
+.introduce p {
+  padding: 28px 0;
 }
 
 #more_info a {
@@ -81,30 +70,57 @@ p {
   border-bottom: 4px solid #fb4b4b;
 }
 
-.trip {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 120px;
-  padding-bottom: 23px;
+main {
+  padding: 30px 0;
+  background-color: #d9e4eb;
 }
 
-.game,
-.tennis,
+.trip_img {
+  display: inline;
+  justify-content: space-between;
+  max-width: 42%;
+  margin: 2%;
+  border-top: 5px solid #fb4b4b;
+}
+
+.drink_img,
+.coding_img {
+  max-width: 90%;
+  border-top: 5px solid #fb4b4b;
+  margin-bottom: 2%;
+}
+
+.trip,
+.food,
+.drink,
 .coding {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 23px;
+  text-align: center;
+  padding: 30px 0;
 }
 
-main img {
-  margin: 10px;
+.food video {
   border-top: 5px solid #fb4b4b;
 }
 
+.social_menu ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  background-color: #eaccc2;
+  padding: 33px 25px 23px 0;
+}
+
+.social_menu li {
+  padding: 0 10px;
+}
+
+.social_menu a {
+  font-size: 2em;
+  color: #fb4b4b;
+}
+
 @media screen and (max-width: 480px) {
-  .container {
-    width: 50%;
-  }
 }
