@@ -1,6 +1,5 @@
 body {
   box-sizing: border-box;
-  height: 100vh;
 }
 
 * {
@@ -27,9 +26,10 @@ p {
 
 .wrap a {
   color: black;
-  padding: 3px 16px;
+  padding: 0 5px;
   border-radius: 3px;
   font-family: "Baloo Paaji 2", cursive;
+  font-size: 1em;
   text-decoration: none;
 }
 
@@ -42,7 +42,7 @@ p {
 .footer_section h1 {
   display: block;
   font-family: "Do Hyeon", sans-serif;
-  font-size: 3.5em;
+  font-size: 3em;
   text-align: center;
   padding: 60px 0;
 }
@@ -57,6 +57,10 @@ p {
 
 .introduce p {
   padding: 28px 0;
+}
+
+#introduce_img {
+  max-width: 40%;
 }
 
 #more_info a {
@@ -76,7 +80,7 @@ main {
 }
 
 .trip_img {
-  display: inline;
+  display: inline-block;
   justify-content: space-between;
   max-width: 42%;
   margin: 2%;
