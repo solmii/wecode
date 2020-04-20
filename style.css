@@ -8,6 +8,7 @@ body {
 }
 
 p {
+  width: auto;
   font-family: "Nanum Gothic", sans-serif;
   font-size: 1em;
   line-height: 1.7;
