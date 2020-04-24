@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>to do list</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="js-clock">
+      <!-- JS에서 .js-title를 가져왔는데, 그렇게 안하고 h1태그를 바로 가져와도 된다. -->
+      <h1 class="js-title"></h1>
+    </div>
+    <form class="js-form form">
+      <input type="text" placeholder="What is your name?" />
+    </form>
+    <h4 class="js-greetings greetings"></h4>
+    <form class="js-toDoForm">
+      <input type="text" placeholder="Write a to do" />
+    </form>
+    <ul class="js-toDoList"></ul>
+
+    <script src="clock.js"></script>
+    <script src="gretting.js"></script>
+    <script src="todo.js"></script>
+  </body>
+</html>
