@@ -23,6 +23,42 @@ p {
   color: #fb4b4b;
 }
 
+/* cursor 깜빡이는 animation */
+.blink {
+  animation: cursor-blink 1s ease infinite;
+  -webkit-animation: cursor-blink 1s ease infinite;
+}
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 10%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+#title_cursor {
+  height: 0.85em;
+  position: relative;
+  top: 3.5px;
+}
+
+#footer_cursor {
+  height: 0.85em;
+  position: relative;
+  top: 4.2px;
+}
+
+#todo_cursor {
+  height: 0.85em;
+  position: relative;
+  top: 1px;
+}
+
 /* header - navigation bar */
 .wrap ul {
   display: flex;
