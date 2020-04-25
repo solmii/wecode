@@ -1,3 +1,4 @@
+/* index */
 body {
   box-sizing: border-box;
 }
@@ -8,39 +9,43 @@ body {
 }
 
 p {
-  width: auto;
+  width: 100%;
   font-family: "Nanum Gothic", sans-serif;
   font-size: 1em;
   line-height: 1.7;
+}
+
+.current {
+  border-bottom: 5px solid #fb4b4b;
 }
 
 .point {
   color: #fb4b4b;
 }
 
+/* header - navigation bar */
 .wrap ul {
   display: flex;
   justify-content: space-around;
   box-shadow: 0 1px 3px 0 hsla(0, 0%, 0%, 0.2);
+  padding: 5px;
   list-style: none;
 }
 
 .wrap a {
   color: black;
-  padding: 0 5px;
-  border-radius: 3px;
+  padding: 0 15px;
   font-family: "Baloo Paaji 2", cursive;
   font-size: 1em;
   text-decoration: none;
 }
 
 .wrap a:hover {
-  color: white;
-  background-color: #fb4b4b;
+  border-bottom: 5px solid #fb4b4b;
 }
 
-.title_section h1,
-.footer_section h1 {
+/* header + footer 큰 제목 */
+h1 {
   display: block;
   font-family: "Do Hyeon", sans-serif;
   font-size: 3em;
@@ -48,6 +53,7 @@ p {
   padding: 60px 0;
 }
 
+/* header - 내 사진이랑 소개 문구 */
 .introduce {
   display: flex;
   flex-direction: column;
@@ -57,6 +63,8 @@ p {
 }
 
 .introduce p {
+  /* text는 왼쪽 정렬하고, p 태그 전체를 가운데 정렬 하고 싶은데ㅠㅠ 우선 text-align으로 맞추고 나중에 수정하기로! */
+  text-align: center;
   padding: 28px 0;
 }
 
@@ -64,6 +72,7 @@ p {
   max-width: 40%;
 }
 
+/* 클릭하면 profile로 이동 */
 #more_info a {
   font-family: "Baloo Paaji 2", cursive;
   padding: 0 8px;
@@ -75,6 +84,7 @@ p {
   border-bottom: 4px solid #fb4b4b;
 }
 
+/* main */
 main {
   padding: 30px 0;
   background-color: #d9e4eb;
@@ -128,5 +138,57 @@ main {
   color: #fb4b4b;
 }
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {} =>반응형 */
+
+/* greeting */
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+h4 {
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 3em;
+  color: #fb4b4b;
+}
+
+/* to do list */
+.js-title {
+  display: block;
+  font-family: "Amatic SC", cursive;
+  font-size: 6em;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.main_form {
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7ece8;
+}
+
+.js-toDoList li {
+  list-style: none;
+  padding: 5px 0;
+  font-family: "Do Hyeon", cursive;
+  font-size: 1.2em;
+}
+
+.js-form input,
+.js-toDoForm input {
+  border: none;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 10px 30px;
+  margin: 30px;
+  background-color: #f7ece8;
+  border-bottom: 5px solid #fb4b4b;
 }

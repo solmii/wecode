@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>to do list</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a3dff484a5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <!-- 비어있는 체크박스 : <i class="far fa-circle"></i> -->
+
+  <body>
+    <!-- header - navigation bar -->
+    <header>
+      <div class="wrap">
+        <nav class="mobile_menu">
+          <ul>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Favorite</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="current" href="#">Todo</a></li>
+            <li><a href="#">Calculator</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- section - title -->
+    <section>
+      <div class="title">
+        <h1>Have a<br /><span class="point">wonderful life</span></h1>
+      </div>
+
+      <div class="main_form">
+        <!-- section - clock -->
+        <div class="js-clock">
+          <!-- JS에서 .js-title를 가져왔는데, 그렇게 안하고 h1태그를 바로 가져와도 된다. -->
+          <h1 class="js-title"></h1>
+        </div>
+
+        <!-- section - user name -->
+        <form class="js-form form">
+          <input type="text" placeholder="이름을 입력해주세요!" />
+        </form>
+        <h4 class="js-greetings greetings"></h4>
+
+        <!-- section - to do list -->
+        <form class="js-toDoForm">
+          <input type="text" placeholder="할 일을 입력해주세요!" />
+        </form>
+        <ul class="js-toDoList"></ul>
+      </div>
+    </section>
+
+    <!-- JavaScript Script -->
+    <script src="clock.js"></script>
+    <script src="greeting.js"></script>
+    <script src="todo.js"></script>
+  </body>
+</html>
