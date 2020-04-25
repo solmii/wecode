@@ -38,16 +38,14 @@ function paintToDo(text) {
   const delBtn = document.createElement("button");
   const span = document.createElement("span");
   const newId = toDos.length + 1; //toDos 안에 있는 Element의 +1개 값이 출력된다.
-  span.innerText = text;
-  delBtn.innerText = "완료!";
+  delBtn.innerText = "💖";
   delBtn.addEventListener("click", deleteToDo);
+  span.innerText = text;
   //appendChild = ()안의 내용은 부모 요소에 넣는다!
   li.appendChild(delBtn);
   li.appendChild(span);
-  li.id = newId;
-  delBtn.innerText = "💗";
-  delBtn.addEventListener("click", deleteToDo);
   toDoList.appendChild(li);
+  li.id = newId;
   const toDoObject = {
     text: text,
     id: newId,
