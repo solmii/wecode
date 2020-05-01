@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="game.css" type="text/css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@500&display=swap"
       rel="stylesheet"
@@ -33,10 +34,31 @@
       </div>
     </header>
 
-    <section></section>
+    <main>
+      <div class="title">
+        <h1>
+          mini game<br /><span class="point">number baseball</span
+          ><span class="blink">
+            <img id="game_cursor" src="img/cursor.png" />
+          </span>
+        </h1>
+      </div>
+      <div class="game">
+        <h4 class="js-hint">1S 1B</h4>
+        <form class="js-game">
+          <input
+            type="text"
+            maxlength="4"
+            minlength="4"
+            placeholder="정답을 입력해주세요!"
+          />
+          <button class="js-gameButton">도전!</button>
+        </form>
+      </div>
+    </main>
 
     <footer></footer>
 
-    <script src="baseball.js"></script>
+    <script src="game.js"></script>
   </body>
 </html>

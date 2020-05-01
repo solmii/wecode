@@ -1,0 +1,44 @@
+/* header - navigation bar */
+h1 {
+  display: block;
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 3em;
+  text-align: center;
+  padding: 60px 0;
+}
+
+#game_cursor {
+  height: 0.85em;
+  position: relative;
+  top: 1px;
+}
+
+/* main - 숫자 야구 정답 입력 */
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0 100% 0;
+  background-color: #f7ece8;
+}
+
+.js-game input {
+  padding: 10px 30px;
+  font-size: 1.5em;
+  text-align: center;
+  background-color: #f7ece8;
+  border-style: none;
+  border-bottom: 5px solid #fb4b4b;
+}
+
+.js-gameButton {
+}
+
+/* main - 힌트 */
+.js-hint {
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 2em;
+  text-align: center;
+  padding-bottom: 40px;
+}

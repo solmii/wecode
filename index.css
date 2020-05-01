@@ -1,0 +1,108 @@
+/* header + footer 큰 제목 */
+h1 {
+  display: block;
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 3em;
+  text-align: center;
+  padding: 60px 0;
+}
+
+/* 깜빡이는 cursor */
+#title_cursor {
+  height: 0.85em;
+  position: relative;
+  top: 3.5px;
+}
+
+#footer_cursor {
+  height: 0.85em;
+  position: relative;
+  top: 4.2px;
+}
+
+/* header - 내 사진이랑 소개 문구 */
+.introduce {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7ece8;
+  padding: 40px 0;
+}
+
+.introduce p {
+  /* text는 왼쪽 정렬하고, p 태그 전체를 가운데 정렬 하고 싶은데ㅠㅠ 우선 text-align으로 맞추고 나중에 수정하기로! */
+  text-align: center;
+  padding: 28px 0;
+}
+
+#introduce_img {
+  max-width: 40%;
+}
+
+/* 클릭하면 profile로 이동 */
+#more_info a {
+  font-family: "Baloo Paaji 2", cursive;
+  padding: 0 8px;
+  text-decoration: none;
+  color: #fb4b4b;
+}
+
+#more_info a:hover {
+  border-bottom: 4px solid #fb4b4b;
+}
+
+/* main */
+main {
+  padding: 30px 0;
+  background-color: #d9e4eb;
+}
+
+.trip_img {
+  display: inline-block;
+  justify-content: space-between;
+  max-width: 42%;
+  margin: 2%;
+  border-top: 5px solid #fb4b4b;
+}
+
+.drink_img,
+.coding_img {
+  max-width: 90%;
+  border-top: 5px solid #fb4b4b;
+  margin-bottom: 2%;
+}
+
+.trip,
+.food,
+.drink,
+.coding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.food video {
+  margin-bottom: 2%;
+  border-top: 5px solid #fb4b4b;
+}
+
+.social_menu ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  background-color: #eaccc2;
+  padding: 33px 25px 23px 0;
+}
+
+.social_menu li {
+  padding: 0 10px;
+}
+
+.social_menu a {
+  font-size: 2em;
+  color: #fb4b4b;
+}
+
+/* @media screen and (max-width: 480px) {} =>반응형 */

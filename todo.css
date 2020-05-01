@@ -1,0 +1,66 @@
+h1 {
+  display: block;
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 3em;
+  text-align: center;
+  padding: 60px 0;
+}
+
+/* 깜빡이는 커서 */
+#todo_cursor {
+  height: 0.85em;
+  position: relative;
+  top: 1px;
+}
+
+/* greeting */
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+h4 {
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 3em;
+  color: #fb4b4b;
+}
+
+/* to do list */
+.js-title {
+  display: block;
+  font-family: "Amatic SC", cursive;
+  font-size: 6em;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.main_form {
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7ece8;
+}
+
+.js-toDoList li {
+  list-style: none;
+  padding: 5px 0;
+  font-family: "Do Hyeon", cursive;
+  font-size: 1.2em;
+}
+
+.js-form input,
+.js-toDoForm input {
+  border: none;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 10px 30px;
+  margin: 30px;
+  background-color: #f7ece8;
+  border-bottom: 5px solid #fb4b4b;
+}
