@@ -33,13 +33,12 @@ h4 {
 .js-title {
   display: block;
   font-family: "Amatic SC", cursive;
-  font-size: 6em;
+  font-size: 5em;
   margin-bottom: 30px;
   padding: 0;
 }
 
 .main_form {
-  width: 100%;
   padding: 50px 0 100% 0;
   display: flex;
   flex-direction: column;
@@ -48,6 +47,7 @@ h4 {
 }
 
 button {
+  display: inline;
   background-color: white;
   color: #fb4b4b;
   font-size: 1em;
@@ -83,4 +83,16 @@ button:hover {
   margin: 30px 8px;
   background-color: #f7ece8;
   border-bottom: 5px solid #fb4b4b;
+}
+
+@media screen and (max-width: 600px) {
+  .js-toDoForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .js-toDoButton {
+    margin-bottom: 30px;
+  }
 }
