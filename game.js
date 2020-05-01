@@ -29,12 +29,12 @@ gameForm.addEventListener("submit", function (event) {
   event.preventDefault();
   const guess = gameInput.value;
 
-  if (guess === answer.join("")) {
+  if (guess === answer) {
     // 정답일 경우
     gameHint.textContent = "Homerun!!";
   } else {
     // 오답일 경우
-    let guessList = guess.split("");
+    const guessList = guess.split("");
     let strike = 0;
     let ball = 0;
     count += 1;
