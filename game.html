@@ -44,7 +44,7 @@
         </h1>
       </div>
       <div class="game">
-        <h4 class="js-hint">1S 1B</h4>
+        <h4 class="js-hint"></h4>
         <form class="js-game">
           <input
             type="text"
@@ -53,7 +53,11 @@
             placeholder="정답을 입력해주세요!"
           />
           <button class="js-gameButton">도전!</button>
+          <button type="button" onclick="window.location.reload()">
+            재시작
+          </button>
         </form>
+        <div class="logList"></div>
       </div>
     </main>
 

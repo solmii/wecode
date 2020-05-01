@@ -30,15 +30,23 @@ h1 {
   background-color: #f7ece8;
   border-style: none;
   border-bottom: 5px solid #fb4b4b;
+  margin-right: 5px;
 }
 
-.js-gameButton {
+.js-game button {
+  background-color: #fb4b4b;
+  color: white;
+  font-size: 1.3em;
+  text-align: center;
+  border-radius: 5px;
+  padding: 8px 13px;
 }
 
 /* main - 힌트 */
 .js-hint {
   font-family: "Do Hyeon", sans-serif;
-  font-size: 2em;
+  color: #fb4b4b;
+  font-size: 2.5em;
   text-align: center;
   padding-bottom: 40px;
 }
