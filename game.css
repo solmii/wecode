@@ -2,7 +2,7 @@
 h1 {
   display: block;
   font-family: "Do Hyeon", sans-serif;
-  font-size: 3em;
+  font-size: 2.5em;
   text-align: center;
   padding: 60px 0;
 }
@@ -23,6 +23,10 @@ h1 {
   background-color: #f7ece8;
 }
 
+.button {
+  display: inline;
+}
+
 .js-game input {
   padding: 10px 30px;
   font-size: 1.5em;
@@ -34,12 +38,22 @@ h1 {
 }
 
 .js-game button {
-  background-color: #fb4b4b;
-  color: white;
+  background-color: white;
+  color: #fb4b4b;
   font-size: 1.3em;
   text-align: center;
+  border: 1px solid #fb4b4b;
   border-radius: 5px;
   padding: 8px 13px;
+}
+
+button {
+  display: inline;
+}
+
+.js-game button:hover {
+  background-color: #fb4b4b;
+  color: white;
 }
 
 /* main - 힌트 */
@@ -49,4 +63,12 @@ h1 {
   font-size: 2.5em;
   text-align: center;
   padding-bottom: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .button {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
 }
