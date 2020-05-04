@@ -24,11 +24,10 @@ while (answer.length < 4) {
 // 정답 체크
 let count = 0;
 
-gameForm.addEventListener("submit", function (event) {
+gameForm.addEventListener("submit", function checkAnswer(event) {
   // 도전! 버튼을 클릭했을때, 비동기 함수 실행
   event.preventDefault();
   const guess = gameInput.value;
-
   if (guess === answer) {
     // 정답일 경우
     gameHint.textContent = "Homerun!!";
@@ -37,10 +36,11 @@ gameForm.addEventListener("submit", function (event) {
     const guessList = guess.split("");
     let strike = 0;
     let ball = 0;
+    let out = 0;
     count += 1;
     if (count > 10) {
       // 기회 10번 초과시 Game Over
-      gameHint.textContent = `Gmae Over!! 정답은 ${answer}!`;
+      gameHint.textContent = `Game Over!! 정답은 ${answer}!`;
     } else {
       for (let i = 0; i < 3; i += 1) {
         if (Number(guessList[i]) === answer[i]) {
@@ -49,6 +49,9 @@ gameForm.addEventListener("submit", function (event) {
         } else if (answer.indexOf(Number(guessList[i])) > -1) {
           //볼 체크
           ball += 1;
+        } else {
+          //아웃 체크
+          out += 1;
         }
       }
       gameHint.textContent = `${strike}S ${ball}B`;
