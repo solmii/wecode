@@ -27,7 +27,7 @@ while (answer.length < 4) {
   answer.push(randomNumber);
 }
 
-// 중복 체크
+// 중복 체크 => 중복 제거를 이용해서 제거 전, 후 lengh가 다르면 중복!!
 
 // 정답 체크
 let count = 0;
@@ -40,6 +40,9 @@ gameForm.addEventListener("submit", function checkAnswer(event) {
   if (guess === answer.join("")) {
     // 정답일 경우
     gameHint.textContent = "Homerun!!";
+    remainChance.innerHTML = `축하합니다!! <span class="point">${
+      ount + 1
+    }번</span>만에 맞추셨군요!<br/><span class="point">재시작</span> 버튼으로 연승에 도전하세요!`;
     paintAnswer.textContent = `${answer}`;
   } else {
     // 오답일 경우
@@ -64,6 +67,8 @@ gameForm.addEventListener("submit", function checkAnswer(event) {
           ball += 1; //볼 체크
         }
       }
+
+      // 힌트 출력
       gameHint.textContent = `${strike}S ${ball}B`;
       logList.innerHTML += `<li>${count}번째 도전 <span class="point">${guess}</span> : ${strike}S ${ball}B</li>`;
     }
