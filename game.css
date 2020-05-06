@@ -13,14 +13,47 @@ h1 {
   top: 1px;
 }
 
+main {
+  background-color: #f7ece8;
+  padding-top: 40px;
+}
+
+/* main - 남은 기회 출력 */
+h2 {
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* main - 숫자 야구 정답 박스 */
+h3 {
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 2.5em;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.answerBox {
+  display: flex;
+  justify-content: center;
+}
+
+.js-answer {
+  width: 435px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #fb4b4b;
+  color: #f7ece8;
+}
+
 /* main - 숫자 야구 정답 입력 */
 .game {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px 0 100% 0;
-  background-color: #f7ece8;
+  padding: 40px 0 100% 0;
 }
 
 .button {
@@ -28,7 +61,7 @@ h1 {
 }
 
 .js-game input {
-  padding: 10px 30px;
+  padding: 10px 20px;
   font-size: 1.5em;
   text-align: center;
   background-color: #f7ece8;
@@ -58,13 +91,38 @@ h1 {
   color: #fb4b4b;
   font-size: 2.5em;
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 
-@media screen and (max-width: 600px) {
+/* main - 시도 횟수, 힌트 log */
+.log {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.logList li {
+  display: inline-block;
+  width: 250px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 6px;
+  border: 1px solid #fb4b4b;
+  background-color: white;
+  color: #696969;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
   .button {
     display: block;
     text-align: center;
     margin-top: 20px;
   }
+
+  .js-answer {
+    width: 80%;
 }
