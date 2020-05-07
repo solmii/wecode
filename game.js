@@ -37,7 +37,6 @@ gameForm.addEventListener("submit", function checkAnswer(event) {
 
   // 중복 체크
   const findDuplicate = Array.from(new Set(guessList));
-  console.log(findDuplicate);
   if (findDuplicate.length < 4) {
     alert("중복되지 않는 숫자를 입력해주세요.");
   } else if (guess === answer.join("")) {
