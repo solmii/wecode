@@ -40,8 +40,7 @@ h3 {
 }
 
 .js-answer {
-  width: 435px;
-  height: 40px;
+  width: 430px;
   border-radius: 10px;
   background-color: #fb4b4b;
   color: #f7ece8;
@@ -108,14 +107,15 @@ h3 {
   width: 250px;
   padding: 10px;
   margin: 10px;
-  border-radius: 6px;
-  border: 1px solid #fb4b4b;
+  border-radius: 8px;
+  border-bottom: 3px solid #fb4b4b;
   background-color: white;
   color: #696969;
   font-family: "Do Hyeon", sans-serif;
   font-size: 1.3em;
-  text-align: center;
 }
+  
+/* mobile 화면 정렬 */
 
 @media screen and (max-width: 480px) {
   .button {

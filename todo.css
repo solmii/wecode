@@ -60,6 +60,7 @@ button {
 .js-toDoButton {
   font-size: 1.3em;
   padding: 8px 13px;
+  cursor: pointer;
 }
 
 button:hover {

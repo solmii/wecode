@@ -27,8 +27,6 @@ while (answer.length < 4) {
   answer.push(randomNumber);
 }
 
-// 중복 체크 => 중복 제거를 이용해서 제거 전, 후 lengh가 다르면 중복!!
-
 // 정답 체크
 let count = 0;
 
@@ -37,7 +35,12 @@ gameForm.addEventListener("submit", function checkAnswer(event) {
   const guess = gameInput.value;
   const guessList = guess.split("").map(Number);
 
-  if (guess === answer.join("")) {
+  // 중복 체크
+  const findDuplicate = Array.from(new Set(guessList));
+  console.log(findDuplicate);
+  if (findDuplicate.length < 4) {
+    alert("중복되지 않는 숫자를 입력해주세요.");
+  } else if (guess === answer.join("")) {
     // 정답일 경우
     gameHint.textContent = "Homerun!!";
     remainChance.innerHTML = `축하합니다!! <span class="point">${
@@ -54,7 +57,7 @@ gameForm.addEventListener("submit", function checkAnswer(event) {
     let chance = 10 - count;
     remainChance.innerHTML = `남은 기회 : <span class="point">${chance}</span>`;
 
-    if (count >= 10) {
+    if (count > 9) {
       // 기회 10번 초과시 Game Over
       gameHint.textContent = `Game Over!!`;
       remainChance.innerHTML = `<span class="point">재시작</span> 버튼으로 다시 도전하세요!`;
@@ -66,13 +69,11 @@ gameForm.addEventListener("submit", function checkAnswer(event) {
         } else if (answer.indexOf(guessList[i]) > -1) {
           ball += 1; //볼 체크
         }
+        gameHint.textContent = `${strike}S ${ball}B`;
       }
 
       // 힌트 출력
-      gameHint.textContent = `${strike}S ${ball}B`;
       logList.innerHTML += `<li>${count}번째 도전 <span class="point">${guess}</span> : ${strike}S ${ball}B</li>`;
     }
   }
 });
-
-// 아웃 체크
