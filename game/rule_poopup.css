@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.point {
+  color: #0d47a1;
+}
+
+/* header - popup 제목 */
+h1 {
+  display: block;
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 3em;
+  text-align: center;
+  padding: 40px 0;
+}
+
+/* section - 게임 방법 */
+section {
+  padding: 35px 20px;
+  background-color: #d9e4eb;
+}
+
+p {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 1em;
+  line-height: 1.7;
+  margin: 20px 0;
+}
+
+li {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 1em;
+  line-height: 2;
+  margin-left: 20px;
+  color: #0d47a1;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* section - 닫기 버튼 */
+.button {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+button {
+  cursor: pointer;
+  background-color: white;
+  color: #fb4b4b;
+  font-size: 1em;
+  text-align: center;
+  border: 1px solid #fb4b4b;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+button:hover {
+  background-color: #fb4b4b;
+  color: white;
+}
