@@ -19,11 +19,35 @@ main {
 }
 
 /* main - 남은 기회 출력 */
-h2 {
+.chance {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.js-chance {
   font-family: "Do Hyeon", sans-serif;
   font-size: 1.5em;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+/* main - 게임 방법 팝업창 */
+.chance button {
+  cursor: pointer;
+  background-color: white;
+  color: #fb4b4b;
+  font-size: 1.1em;
+  text-align: center;
+  border: 1px solid #fb4b4b;
+  border-radius: 5px;
+  padding: 5px 12px;
+  margin-left: 60px;
+}
+
+.chance button:hover {
+  background-color: #fb4b4b;
+  color: white;
 }
 
 /* main - 숫자 야구 정답 박스 */
@@ -70,6 +94,7 @@ h3 {
 }
 
 .js-game button {
+  cursor: pointer;
   background-color: white;
   color: #fb4b4b;
   font-size: 1.3em;
@@ -114,7 +139,7 @@ h3 {
   font-family: "Do Hyeon", sans-serif;
   font-size: 1.3em;
 }
-  
+
 /* mobile 화면 정렬 */
 
 @media screen and (max-width: 480px) {
@@ -126,4 +151,14 @@ h3 {
 
   .js-answer {
     width: 80%;
+  }
+
+  .chance {
+    display: block;
+    text-align: center;
+  }
+
+  .chance button {
+    margin: 0 0 30px 0;
+  }
 }

@@ -9,6 +9,15 @@ const gameHint = document.querySelector(".js-hint"),
   remainChance = document.querySelector(".js-chance"),
   logList = document.querySelector(".logList");
 
+// 게임 방법 (popup창)
+function showPopup() {
+  window.open(
+    "rule_popup.html",
+    "game_rule_popup",
+    "width=500, height=700, left=100, top=100"
+  );
+}
+
 // 야매로 데이터 출력..... 수정 필요함ㅠ
 paintAnswer.textContent = "?";
 remainChance.innerHTML = `남은 기회 : <span class="point">10</span>`;
@@ -43,7 +52,7 @@ gameForm.addEventListener("submit", function checkAnswer(event) {
     // 정답일 경우
     gameHint.textContent = "Homerun!!";
     remainChance.innerHTML = `축하합니다!! <span class="point">${
-      ount + 1
+      count + 1
     }번</span>만에 맞추셨군요!<br/><span class="point">재시작</span> 버튼으로 연승에 도전하세요!`;
     paintAnswer.textContent = `${answer}`;
   } else {
@@ -68,10 +77,10 @@ gameForm.addEventListener("submit", function checkAnswer(event) {
         } else if (answer.indexOf(guessList[i]) > -1) {
           ball += 1; //볼 체크
         }
-        gameHint.textContent = `${strike}S ${ball}B`;
       }
 
       // 힌트 출력
+      gameHint.textContent = `${strike}S ${ball}B`;
       logList.innerHTML += `<li>${count}번째 도전 <span class="point">${guess}</span> : ${strike}S ${ball}B</li>`;
     }
   }
