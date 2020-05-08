@@ -1,0 +1,52 @@
+/* header 큰 제목 */
+h1 {
+  display: block;
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 3em;
+  text-align: center;
+  padding: 60px 0;
+}
+
+/* 깜빡이는 cursor */
+#favorite_cursor {
+  height: 0.85em;
+  position: relative;
+  top: 3.5px;
+}
+
+/* main */
+main {
+  background-color: #f7ece8;
+  padding: 30px 0 100% 0;
+}
+
+/* main - favorite menu */
+.favorite_menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.favorite_menu button {
+  padding: 5px 20px;
+  font-family: "Baloo Paaji 2", cursive;
+  font-size: 1em;
+  background-color: #fb4b4b;
+  color: #fff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.favorite_menu button:hover {
+  background-color: #fff;
+  color: #fb4b4b;
+  border: 1px solid #fb4b4b;
+}
+
+/* main - favorite container */
+.favorite_box {
+  display: flex;
+  height: 500px;
+  width: 80%;
+  background-color: #fff;
+}
