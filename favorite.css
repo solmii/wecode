@@ -16,19 +16,22 @@ h1 {
 
 /* main */
 main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #f7ece8;
   padding: 30px 0 100% 0;
 }
 
 /* main - favorite menu */
 .favorite_menu {
-  display: flex;
-  justify-content: center;
   list-style: none;
 }
 
 .favorite_menu button {
   padding: 5px 20px;
+  margin: 0 3px;
+  cursor: pointer;
   font-family: "Baloo Paaji 2", cursive;
   font-size: 1em;
   background-color: #fb4b4b;
@@ -46,7 +49,41 @@ main {
 /* main - favorite container */
 .favorite_box {
   display: flex;
-  height: 500px;
-  width: 80%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  padding: 40px;
+  border-radius: 20px;
   background-color: #fff;
+}
+
+.favorite_item {
+  max-height: 15em;
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 0.9rem;
+}
+
+
+.favorite_item img {
+  max-height: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+}
+
+.description {
+  display: inline;
+  text-align: center;
+}
+
+/* mobile 반응형 */
+@media screen and (max-width: 480px) {
+  .favorite_menu button {
+    padding: 3px 15px;
+    margin: 0;
+}
+  .favorite_box {
+    display: flex;
+    width:100%;
+    padding: 25px;
+    border-radius: 0;
 }
